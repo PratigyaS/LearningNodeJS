@@ -1,0 +1,11 @@
+
+
+var fs = require('fs');
+
+var file = process.argv[2];
+var fileSystem = fs.readFileSync(file);
+
+var res = fileSystem.toString().split('\n').length;
+
+
+console.log(res-1);
